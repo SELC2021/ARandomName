@@ -9,12 +9,10 @@ Travel Blog
 <style>
 body{
 margin: 0;
-background-color: ;
+background-image:"C:\Users\BI\Pictures\travel_blog_pic1.jpg";
 background-size: cover;
 font-family: sans-serif;
 font-weight: 300;
-animation: animate 16s ease-in-out infinite;
-backgrond-size: cover;
 }
 h1{
 font-size: 100px;
@@ -28,28 +26,9 @@ text-align: center;
 color: #1EAE98;
 }
 
-.container {
-width: 80%
-margin: 0 auto
-background: grey;
-animation: animate 16s ease-in-out infinite;
-backgrond-size: cover;
-}
-@keyframes animate{
-0%,100%{
-background-image: url();
-}
-25%{
-background-image: url("");
-}
-75%{
-background-image: url();
-}
-
-
 }
 header {
-background: grey;
+background: white;
 }
 nav ul {
 margin: 0;
@@ -102,6 +81,7 @@ border-radius: 4px;
 
 #container{
    min-height: 100%;
+   backgound-color: blue;
    }
 #main{
    overflow: auto;
@@ -118,7 +98,7 @@ border-radius: 4px;
     clear: both;
     text-align: center;
    }
-aside{
+<!--aside{
     background-color: grey;
     padding-left: 50px;
     padding-bottom: 100px;
@@ -126,9 +106,29 @@ aside{
     height: 1000px;
     width: 300px;
 }
+-->
+aside{
+    text-decoration: none;
+    text-color: white;
+    line-height: 50px;
+    display: block;
+    font-size: 25px;
+    padding-right: 40px;
+    
+    
+}
+#continents{
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    display: block;
+    font-size: 25px;
+    padding-right: 40px;
+    
+}
 </style>
 </head>
-<body background="white">
+<body background="C:\Users\BI\Pictures\travel_blog_pic1.jpg">
 
 <header>
 <div class="container">
@@ -148,7 +148,7 @@ aside{
 </nav>
 </div>
 </header>
-<h1>H</h1>
+<h1>Welcome</h1>
 <h2>Travel Blog</h2>
 <footer>
 <div class="container">
@@ -163,8 +163,29 @@ aside{
 </footer>
 <div id= "container">
   <div id="main">
+  <!--</div> added-->
+  <!--/div>  <!--added-->
 <aside>
+<div class ="container">
+<!--<nav>-->
+<ul>
+<li><a href="#">North America</a></li> 
+<li><a href="#">South America</a>
+<ul>
+<li><a href="#">Eruope</a></li>
+</ul>
+</li> 
+<li><a href="#">Africa</a></li> 
+<ul>
+<li><a href="#">Asia</a></li> 
+</ul>
+<li><a href="#">Australia</a></li> 
+<li><a href="#"></a></li>
+</ul>
+<!--</nav>-->
+
 </aside>
+</div>
 </div>
 </div>
 <p>Welcome to out Travel Blog website.</p>
