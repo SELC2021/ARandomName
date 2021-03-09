@@ -1,197 +1,37 @@
 <DOCTYPE! html>
 <html>
 <head>
-<title>
-Travel Blog
-</title>
-<link rel="stylesheet" href="style.css">
-<meta charset= "UTF-8">
-<style>
-body{
-margin: 0;
-background-color: none;
-background-size: cover;
-font-family: sans-serif;
-font-weight: 300;
-animation: animate 16s ease-in-out infinite;
-background-size: cover;
-}
-h1{
-font-size: 100px;
-padding: 15px;
-text-align: center;
-color: #1EAE98;
-}
-h2{
-font-size: 45px;
-text-align: center;
-color: #1EAE98;
-}
-
-.container {
-width: 80%;
-margin: 0 auto;
-background: grey;
-animation: animate 16s ease-in-out infinite;
-background-size: cover;
-}
-@keyframes animate{
-0%,100%{
-background-image: url();
-}
-25%{
-background-image: url("");
-}
-75%{
-background-image: url();
-}
-
-
-}
-header {
-background: grey;
-}
-nav ul {
-margin: 0;
-padding: 20px 0 20px 0;
-list-style: none;
-padding-right: 50px;
-}
-nav {
-background-color: #1EAE98;
-}
-li a {
-text-decoration: none;
-color: black;
-line-height: 50px;
-display: block;
-font-size: 25px;
-padding-right: 40px;
-}
-a{
-margin-left: 44%; 
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-nav li {
-display: inline-block;
-margin-left: 0 35px;
-padding-top: 25px;
-height: 50px;
-position: relative;
-}
-nav li :hover ul  {
-display: block;
-}
-nav li ul {
-display: none;
-position: absolute;
-background-color: black;
-padding: 10px
-}
-nav li ul li a {
-padding: 12px 14px;
-
-}
-nav li ul li a:hover {
-padding: 12px 14px;
-background-color: white;
-padding: 10px;
-border-radius: 4px;
-}
-nav li ul li  {
-width: 180px;
-border-radius: 4px;
-}
-
-#container{
-   min-height: 100%;
-   }
-#main{
-   overflow: auto;
-   padding-bottom: 100px;
-   background-color: white;
-   height: 1000px;
-   }
-
-#footer{
-    background-color: #1EAE98;
-    position: relative;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
-    text-align: center;
-   }
-aside{
-    background-color: grey;
-    padding-left: 50px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    height: 1000px;
-    width: 300px;
-}
-#myInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
-
-#myTable {
-  border-collapse: collapse; /* Collapse borders */
-  width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
-  font-size: 18px; /* Increase font-size */
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#myTable th, #myTable td {
-  text-align: left; /* Left-align text */
-  padding: 12px; /* Add padding */
-}
-
-#myTable tr {
-  /* Add a bottom border to all table rows */
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  /* Add a grey background color to the table header and on hover */
-  background-color: #f1f1f1;
-}
-</style>
+  <title>Travel Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset= "UTF-8">
 </head>
 
 <header>
-<nav>
-<ul>
-<li><a href="TravelBlog-1.html">Home</a></li> 
-<li><a href="TravelBlog-2.html">About</a>
-<ul>
-<li><a href="#">Donate</a></li>
-</ul>
-</li> 
-<li><a href="#">Blogs</a></li> 
-<li><a href="TravelBlog-4.html">Filter</a></li> 
-<li><a href="#">Contact</a></li> 
-<li><a href="#"></a></li>
-</ul>
-</nav>
-</div>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="TravelBlog-1.html">Home</a></li> 
+        <li><a href="TravelBlog-2.html">About</a></li>
+        <li><a href="#">Donate</a></li> 
+        <li><a href="#">Blogs</a></li> 
+        <li><a href="TravelBlog-4.html">Filter</a></li> 
+        <li><a href="#">Contact</a></li> 
+        <li><a href="#"></a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 <h1>Filter Blogs</h1>
 <h2>Travel Blog</h2>
 <footer>
-<nav>
-<ul>
-<li>
-</li>
-</ul>
-</nav>
+  <nav>
+    <ul>
+      <li>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for blog names..">
 
 <table id="myTable">
@@ -217,33 +57,180 @@ aside{
   </tr>
 </table>
 <div>
-<ul>
-</ul>
-<a href="TravelBlog-4_2.html">Or search by country</a>
-<ul>
-</ul>
+  <ul>
+  </ul>
+  <a href="TravelBlog-4_2.html">Or search by country</a>
+  <ul>
+  </ul>
 </div>
 
 <script>
-    function myFunction() {
-      // Declare variables
-      var input, filter, table, tr, td, i, txtValue;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("myTable");
-      tr = table.getElementsByTagName("tr");
+  function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
     
-      // Loop through all table rows, and hide those who don't match the search query
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
         }
-      }
+      }     
     }
-    </script>
+  }
+</script>
+
+<style>
+  body{
+    margin: 0;
+    background-size: cover;
+    font-family: sans-serif;
+    font-weight: 300;
+  }
+
+  h1{
+    font-size: 100px;
+    padding: 15px;
+    text-align: center;
+    color: #1EAE98;
+  }
+
+  h2{
+    font-size: 45px;
+    text-align: center;
+    color: #1EAE98;
+  }
+
+  header {
+    background: white;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    list-style: none;
+    padding-right: 50px;
+  }
+
+  nav {
+    background-color: #1EAE98;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    line-height: 50px;
+    display: block;
+    font-size: 25px;
+    padding-right: 40px;
+  }
+
+  a{
+    margin-left: 44%; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  nav li {
+    display: inline-block;
+    margin-left: 0 35px;
+    padding-top: 25px;
+    height: 50px;
+    position: relative;
+  }
+
+  nav li :hover ul  {
+    display: block;
+  }
+
+  nav li ul {
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 10px
+  }
+
+  nav li ul li a {
+    padding: 12px 14px;
+  }
+
+  nav li ul li a:hover {
+    padding: 12px 14px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  nav li ul li  {
+    width: 180px;
+    border-radius: 4px;
+  }
+
+  p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 8%;
+    margin-right: 8%;
+    line-height: 1.6;
+  }
+
+  #container{
+    min-height: 100%;
+  }
+
+  #main{
+    overflow: auto;
+    padding-bottom: 100px;
+    background-color: white;
+    height: 1000px;
+  }
+
+  #footer{
+    background-color: #1EAE98;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    text-align: center;
+  }
+
+  #myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+    
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+    
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+  }
+    
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+    
+  #myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+  }
+</style>
