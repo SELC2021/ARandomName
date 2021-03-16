@@ -36,22 +36,25 @@
       Email us with any questions or inquires. We would be happy to answer your questions or help with whatver you need.
     </p>
   </div>
-  <form>
+  <form id="contact-form">
     <table id="myTable">
       <tr>
-        <td>First Name:</td>
-        <td><input type="text" name="first" /></td>
-      </tr>
-      <tr>
-        <td>Last Name:</td>
-        <td><input type="text" name="last"  /></td>
+        <td>Name:</td>
+        <td><input type="text" name="user_name" /></td>
       </tr>
       <tr>
         <td>Email:</td>
-        <td><input type="text" name="email" /></td>
+        <td><input type="email" name="user_email" /></td>
       </tr>
+      <tr>
+        <td>Message:</td>
+        <td><textarea name="message"></textarea></td>
+      </tr>
+        <td></td>
+        <td><input type="submit" value="Send Message"></td>
     </table>
   </form>
+
 <footer>
   <nav>
     <ul>
@@ -184,11 +187,6 @@
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
     padding-left: 20%;
-  }
-    
-  #myTable tr {
-    /* Add a bottom border to all table rows */
-    border-bottom: 1px solid #ddd;
   }
     
 </style>
