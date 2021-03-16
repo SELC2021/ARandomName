@@ -31,6 +31,27 @@
     </ul>
   </nav>
 </footer>
+<div class="container">
+    <p>
+      Email us with any questions or inquires. We would be happy to answer your questions or help with whatver you need.
+    </p>
+  </div>
+  <form>
+    <table id="myTable">
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" name="first" /></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" name="last"  /></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="text" name="email" /></td>
+      </tr>
+    </table>
+  </form>
 <footer>
   <nav>
     <ul>
@@ -124,9 +145,10 @@
   }
 
   p {
+    font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 6%;
+    margin-right: 6%;
     line-height: 1.6;
   }
 
@@ -149,4 +171,24 @@
     clear: both;
     text-align: center;
   }
+
+  #myTable {
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+    
+  #myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+    padding-left: 20%;
+  }
+    
+  #myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+  }
+    
 </style>
