@@ -6,7 +6,7 @@
   <meta charset= "UTF-8">
 </head>
 
-<body background="C:\Users\BI\Pictures\travel_blog_pic1.jpg">
+<body /*background="C:\Users\BI\Pictures\travel_blog_pic1.jpg"*/>
   <header>
     <div class="container">
       <nav>
@@ -32,24 +32,43 @@
       </ul>
     </nav>
   </footer>
-  <div id= "container">
-    <div id="main">
-      <aside>
-        <div class ="container">
-          <ul>
-            <li><a href="#">North America</a></li> 
-            <li><a href="#">South America</a></li>
-            <li><a href="#">Europe</a></li>
-            <li><a href="#">Africa</a></li> 
-            <li><a href="#">Asia</a></li> 
-            <li><a href="#">Australia</a></li> 
-          </ul>
-        </div>
-      </aside>
-    </div>
-  </div>
+  <div class="overall">
 
-  <p>Welcome to out Travel Blog website.</p>
+<div class="leftside">
+<ul>
+<li><a href="#">Eruope</a></li> 
+<li><a href="#">Astrulia</a>
+<li><a href="#">Asia</a></li>
+</li>
+<li><a href="#">Africa</a></li> 
+<li><a href="#">South America</a></li> 
+<li><a href="#">North America</a></li> 
+<li><a href="#"></a></li>
+</ul>
+</div>
+
+
+<div class="rightside">
+<h3>Featured Articles</h3>
+<div class="row">
+  <div class="column">
+    <img src="C:\Users\BI\Pictures\paris_pic.jpg">
+	<li><a href="#">Paris</a></li> 
+  </div>
+  <div class="column">
+    <img src="C:\Users\BI\Pictures\rome_pic.jpg">
+	<li><a href="#">Rome</a></li> 
+  </div>
+  <div class="column">
+    <img src="C:\Users\BI\Pictures\seoul_pic.jpg">
+	<li><a href="#">Soeul</a></li> 
+  </div>
+</div>
+
+</div>
+		
+    </div>
+
 
   <footer id="footer">
     <p>2021</p>
@@ -58,125 +77,127 @@
 
 <style>
   body{
-    margin: 0;
-    background-image:"C:\Users\BI\Pictures\travel_blog_pic1.jpg";
-    background-size: cover;
-    font-family: sans-serif;
-    font-weight: 300;
+  background-color: #f2f2f2;
+   margin: 0;
   }
 
   h1{
-    font-size: 100px;
-    padding: 15px;
-    text-align: center;
-    color: #1EAE98;
+   font-size: 100px;
+   padding: 15px;
+   text-align: center;
+   color: #1EAE98;
   }
-
   h2{
-    font-size: 45px;
-    text-align: center;
-    color: #1EAE98;
+   font-size: 45px;
+   text-align: center;
+   color: #1EAE98;
   }
-  
-  header {
-    background: white;
+  h3{
+   font-size: 45px;
+   padding-left: 400px;
+   padding-right: 100px;
+
   }
 
-  nav ul {
-    margin: 0;
-    padding: 20px 0 20px 0;
-    list-style: none;
-    padding-right: 50px;
+  nav ul { /*<!-- sizes the navigation bar and the bar under it-->*/
+   margin: 0;
+   padding: 20px 0 20px 0;
+   list style: none;
+   padding-right: 50px;
+   }
+  nav { /*<!--Determines the color of the nav bar and the bar under it-->*/
+   background-color: #1EAE98;
   }
 
-  nav {
-    background-color: #1EAE98;
+
+  li a { /*<!--Formats the links-->*/
+   text-decoration: none;
+   color: black;
+   line-height: 50px;
+   display: block;
+   font-size: 25px;
+   padding-right: 40px;
   }
 
-  li a {
-    text-decoration: none;
-    color: black;
-    line-height: 50px;
-    display: block;
-    font-size: 25px;
-    padding-right: 40px;
+
+
+  nav li { /*<!--keeps the links horizontal-->*/
+   display: inline-block;
+   margin-left: 0 35px;
+   padding-top: 25px
+   height: 50px;
+   position: relative;
   }
 
-  a{
-    margin-left: 44%; 
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-left: 0 35px;
-    padding-top: 25px;
-    height: 50px;
-    position: relative;
-  }
 
-  nav li :hover ul  {
-    display: block;
-  }
 
-  nav li ul {
-    display: none;
-    position: absolute;
-    background-color: black;
-    padding: 10px
+  nav li ul { /*<!--Also helps format the links-->*/
+   display: none;
+   position: absolute;
+   background-color: black;
+   padding: 10px
   }
-
-  nav li ul li a {
-    padding: 12px 14px;
-  
+  img{
+      height: 200px;
+      margin: 40px 0px 0px;
+      border: 7px  solid black;
+      border radius: 20px;
   }
-  nav li ul li a:hover {
-    padding: 12px 14px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 4px;
-  }
-
-  nav li ul li  {
-    width: 180px;
-    border-radius: 4px;
-  }
-  
-  #container{
-    min-height: 100%;
-    background-color: blue;
-  }
-
-  #main{
-    overflow: auto;
-    padding-bottom: 100px;
-    background-color: white;
-    height: 1000px;
-  }
-  
-  #footer{
+  #footer{ /*<!--Creates a footer--> */
     background-color: #1EAE98;
     position: relative;
     height: 100px;
     margin-top: -100px;
     clear: both;
     text-align: center;
-  }
+   }
+  #containert{
+   min-height: 100%;
+   }
+  #main{
+   overflow: auto;
+   padding-bottom: 100px;
+   background-color: white;
+   height: 1000px;
+   }   
+   
+   div.overall {
+    width: 1420px;
+	/*border:dashed 1px black;*/
+    position: relative;
+    clear: both;
+    }
 
-  aside{
-    background-color: grey;
-    padding-left: 50px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    height: 1000px;
-    width: 300px;
-  }
+   div.leftside {
+    width: 15%;
+	height: 570px;
+    position: relative;
+    background: grey ;        
+    float: left;
+    }
 
-  #continents{
-    text-decoration: none;
-    color: black;
-    line-height: 50px;
-    display: block;
-    font-size: 25px;
-    padding-right: 40px;
-  }
+   div.rightside {
+    width: 84%;
+	height: 570px;
+    position: relative;
+    background: white;        
+    float: right;
+     }
+
+   .column {
+    float: left;
+    width: 28.33%;
+    padding: 25px;
+    }
+
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+li a.leftside{
+text-decoration: none;
+text-color: blue;
+}
   </style>
