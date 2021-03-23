@@ -48,7 +48,7 @@
       </tr>
       <tr>
         <td>Message:</td>
-        <td><textarea name="message"></textarea></td>
+        <td><textarea name="message" rows="4" cols="50" maxlength="208"></textarea></td>
       </tr>
         <td></td>
         <td><input type="submit" value="Send Message"></td>
@@ -156,6 +156,10 @@
     line-height: 1.6;
   }
 
+  textarea{
+    resize: none;
+  }
+
   #container{
     min-height: 100%;
   }
@@ -187,7 +191,7 @@
   #myTable th, #myTable td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
-    padding-left: 20%;
+    padding-left: 25%;
   }
     
 </style>
