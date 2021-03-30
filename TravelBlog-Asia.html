@@ -4,14 +4,15 @@
   <style>
   body{
        text-color: red;
-	   background-color: #808080;
+	   background-color: #332E2E;
 	 }
     header {
       text-align: center;
 	  /*background: "C:\Users\BI\Pictures\asiapage.jpg";*/
-      background-color: red;
+      background-color: #C11306;
       background-size: cover;
       color: red;
+	  padding: 10px 20px 0px 50px;
     }
     a {
       color: red;
@@ -21,10 +22,14 @@
 	  color: black;
 	  
     }
+	h2 {
+	   font-size: 30px;
+	   }
    img {
       height: 200px;
 	  width: 700px;
-      margin: 0px 0px 0px;
+      margin: 0px 10px 30px 0px;
+	  
       border: 2px  solid white;
       border radius: 2px;
     }
@@ -43,11 +48,24 @@
     }
    
 	p{
-	  color: red;
+	  color: #C11306;
+	  
 	  }
 	button {
 	  color: grey;
 	  }
+	 #footer{ /*<!--Creates a footer--> */
+    background-color: #C11306;
+    position: relative;
+    height: 100px;
+    margin-top: 50px;
+	margin-bottom: 0px;
+    clear: both;
+    text-align: center;
+   }
+   h4 {
+    font-size: 50px;
+	}
   </style>
 </head>
 <body>
@@ -61,21 +79,32 @@
       <li><a href="#">Worst Poems</a></li>
     </ul>-->
   </header>
+  
   <article>
-    <h2>VHS umami pop-up trust fund</h2>
-    <p>Welcome to our page on Asia</p>
+    <h4>Welcome to the Wonders of Asia</h4>
+    <img src="C:\Users\BI\Pictures\asiamap.jpg">
+    <h2>Overview</h2>
+    <p>Asia is the largest continent in the world. It takes up 30% of the world's land mass. Asia also has a wide array of climates given it mass land form. </p>
     <button>Like</button>
   </article>
- <!-- <article>
-    <h2>Sartorial synth Echo Park, roof party</h2>
-    <p>chambray you probably haven't heard of them pour-over viral selvage umami skateboard VHS post-ironic selfies. Wes Anderson gentrify fanny pack twee, bicycle rights bitters blog keffiyeh plaid flannel. Tonx irony cliche sustainable mlkshk bitters. Four loko leggings chambray Vice.</p>
+ <article>
+    <h2>Iconic Landmarks</h2>
+	<img src="C:\Users\BI\Pictures\great-wall-china.jpg">
+    <p>Asia is home to many proflic landmarks and landscapes. There are architectural feats such as the The Forbidden City( (the largest imperial palace in the world), the Great wall of China, and the Taj Mahal. Natural landscapes include the Mount Everest, the Dead Dea, and the Chocalate Hills.</p>
     <button>Like</button>
+	<!--<img src="C:\Users\BI\Pictures\great-wall-china.jpg">-->
   </article>
   <article>
-    <h2>Forage food truck keytar master cleanse</h2>
-    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <img src="C:\Users\BI\Pictures\palace.jpg">
+    <h2>Climate</h2>
+    <p>AS mentioned earlier Asia has an extreme range of climates. There is polar climate up near the north yet inwards temperate climate can be seen. There is a big  amount of rainforests under the polar climate.</p>
     <button>Like</button>
   </article>
+  <footer id="footer">
+    <p>2021</p>
+  </footer>
+</body>
+ 
   <script>
     $("button").on("click", function() {
       alert("Clicked!");
