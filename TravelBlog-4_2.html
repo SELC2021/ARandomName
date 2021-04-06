@@ -6,70 +6,78 @@
   <meta charset= "UTF-8">
 </head>
 
-<header>
-  <div class="container">
+<body background="C:\Users\zacha\OneDrive\Pictures\SE166\Beach.jpg">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="TravelBlog-1.html">Home</a></li> 
+          <li><a href="TravelBlog-2.html">About</a></li>
+          <li><a href="TravelBlog-3.html">Donate</a></li> 
+          <li><a href="#">Blogs</a></li> 
+          <li><a href="TravelBlog-4.html" class="active">Filter</a></li> 
+          <li><a href="TravelBlog-5.html">Contact</a></li> 
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1>Filter Blogs</h1>
+  <h2>Travel Blog</h2>
+  <footer>
     <nav>
       <ul>
-        <li><a href="TravelBlog-1.html">Home</a></li> 
-        <li><a href="TravelBlog-2.html">About</a></li>
-        <li><a href="TravelBlog-3.html">Donate</a></li> 
-        <li><a href="#">Blogs</a></li> 
-        <li><a href="TravelBlog-4.html" class="active">Filter</a></li> 
-        <li><a href="TravelBlog-5.html">Contact</a></li> 
-        <li><a href="#"></a></li>
+      <li>
+      </li>
       </ul>
     </nav>
+  </footer>
+
+  <br>
+  <br>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for country names..">
+
+  <br>
+  <br>
+  <table id="myTable">
+    <tr class="header">
+      <th style="width:60%;">Blog Name</th>
+      <th style="width:40%;">Country</th>
+    </tr>
+    <tr>
+      <td><a style="margin-left: 0%; color: black;" href="#">Exploration in Germany</a></td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td><a style="margin-left: 0%; color: black;" href="#">Down Under</a></td>
+      <td>Australia</td>
+    </tr>
+    <tr>
+      <td><a style="margin-left: 0%; color: black;" href="#">Visiting the Queen</a></td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td><a style="margin-left: 0%; color: black;" href="#">Land of the Rising Sun</a></td>
+      <td>Japan</td>
+    </tr>
+  </table>
+
+  <div>
+    <ul>
+    </ul>
+    <a style="color: black; margin-left: 44%;" href="TravelBlog-4.html">Or search by blog name</a>
+    <ul>
+    </ul>
   </div>
-</header>
-<h1>Filter Blogs</h1>
-<h2>Travel Blog</h2>
-<footer>
-  <nav>
-    <ul>
-    <li>
-    </li>
-    </ul>
-  </nav>
-</footer>
-
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for country names..">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:60%;">Blog Name</th>
-    <th style="width:40%;">Country</th>
-  </tr>
-  <tr>
-    <td><a style="margin-left: 0%; color: black;" href="#">Exploration in Germany</a></td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td><a style="margin-left: 0%; color: black;" href="#">Down Under</a></td>
-    <td>Australia</td>
-  </tr>
-  <tr>
-    <td><a style="margin-left: 0%; color: black;" href="#">Visiting the Queen</a></td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td><a style="margin-left: 0%; color: black;" href="#">Land of the Rising Sun</a></td>
-    <td>Japan</td>
-  </tr>
-</table>
-
-<div>
-  <ul>
-  </ul>
-  <a style="color: black; margin-left: 44%;" href="TravelBlog-4.html">Or search by blog name</a>
-  <ul>
-  </ul>
-</div>
-<footer>
-  <nav>
-    <ul>
-    </ul>
-  </nav>
-</footer>
+  <br>
+  <br>
+  <footer>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </footer>
+</body>
 
 <script>
     function myFunction() {
@@ -101,6 +109,10 @@
     background-size: cover;
     font-family: sans-serif;
     font-weight: 300;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 100% 54%;
   }
 
   h1{
