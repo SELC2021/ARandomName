@@ -6,62 +6,73 @@
   <meta charset= "UTF-8">
 </head>
 
-<header>
-  <div class="container">
+<body background="C:\Users\zacha\OneDrive\Pictures\SE166\Boston.jpg">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="TravelBlog-1.html">Home</a></li> 
+          <li><a href="TravelBlog-2.html">About</a></li>
+          <li><a href="TravelBlog-3.html">Donate</a></li> 
+          <li><a href="#">Blogs</a></li> 
+          <li><a href="TravelBlog-4.html">Filter</a></li> 
+          <li><a href="TravelBlog-5.html" class="active">Contact</a></li> 
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1>Contact Us</h1>
+  <h2>Travel Blog</h2>
+  <footer>
     <nav>
       <ul>
-        <li><a href="TravelBlog-1.html">Home</a></li> 
-        <li><a href="TravelBlog-2.html">About</a></li>
-        <li><a href="#">Donate</a></li> 
-        <li><a href="#">Blogs</a></li> 
-        <li><a href="TravelBlog-4.html">Filter</a></li> 
-        <li><a href="TravelBlog-5.html">Contact</a></li> 
-        <li><a href="#"></a></li>
+        <li>
+        </li>
       </ul>
     </nav>
-  </div>
-</header>
-<h1>Contact Us</h1>
-<h2>Travel Blog</h2>
-<footer>
-  <nav>
-    <ul>
-      <li>
-      </li>
-    </ul>
-  </nav>
-</footer>
-<div class="container">
-    <p>
-      Email us with any questions or inquires. We would be happy to answer your questions or help with whatver you need.
-    </p>
-  </div>
-  <form id="contact-form">
-    <table id="myTable">
-      <tr>
-        <td>Name:</td>
-        <td><input type="text" name="user_name" /></td>
-      </tr>
-      <tr>
-        <td>Email:</td>
-        <td><input type="email" name="user_email" /></td>
-      </tr>
-      <tr>
-        <td>Message:</td>
-        <td><textarea name="message" rows="4" cols="50" maxlength="208"></textarea></td>
-      </tr>
-        <td></td>
-        <td><input type="submit" value="Send Message"></td>
-        <!--somehow stop page from dancing when expanding textarea-->
-    </table>
-  </form>
+  </footer>
+  <div class="container">
+    <br>
+    <br>
+      <p>
+        Email us with any questions or inquires. We would be happy to answer your questions or help with whatever you need.
+      </p>
+    </div>
+    <form id="contact-form" onsubmit="myFunction()">
+      <table id="myTable">
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="user_name" /></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="user_email" /></td>
+        </tr>
+        <tr>
+          <td>Message:</td>
+          <td><textarea name="message" rows="4" cols="50" maxlength="208"></textarea></td>
+        </tr>
+          <td></td>
+          <td><input type="submit" value="Send Message"></td>
+      </table>
+      <br>
+      <br>
+    </form>
 
-<footer>
-  <nav>
-    <ul>
-    </ul>
-  </nav>
-</footer>
+  <footer>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+<script>
+    function myFunction() {
+      alert("Message send successfully!");
+    }
+</script>
 
 <style>
   body{
@@ -69,6 +80,10 @@
     background-size: cover;
     font-family: sans-serif;
     font-weight: 300;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 100% 55%;
   }
 
   h1{
@@ -88,80 +103,59 @@
     background: white;
   }
 
-  nav ul {
-    margin: 0;
-    padding: 20px 0 20px 0;
-    list-style: none;
-    padding-right: 50px;
-  }
-
   nav {
     background-color: #1EAE98;
   }
 
-  li a {
+  nav ul {
+    margin: 0;
+    padding: 25px 0 25px 0;
+    list-style: none;
+  }
+
+  nav li {
+    display: inline-block;
+    height: 50px;
+    position: relative;
+  }
+
+  nav ul li a {
     text-decoration: none;
     color: black;
     line-height: 50px;
     display: block;
     font-size: 25px;
-    padding-right: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    float: left;
   }
 
-  a{
-    margin-left: 44%; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  nav ul li a:hover {
+    background-color: #111;
+    color: white;
   }
 
-  nav li {
-    display: inline-block;
-    margin-left: 0 35px;
-    padding-top: 25px;
-    height: 50px;
-    position: relative;
-  }
-
-  nav li :hover ul  {
-    display: block;
-  }
-
-  nav li ul {
-    display: none;
-    position: absolute;
-    background-color: black;
-    padding: 10px
-  }
-
-  nav li ul li a {
-    padding: 12px 14px;
-  }
-
-  nav li ul li a:hover {
-    padding: 12px 14px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 4px;
-  }
-
-  nav li ul li  {
-    width: 180px;
-    border-radius: 4px;
+  .active {
+    background-color: #111;
+    color: white;
   }
 
   p {
-    font-size: 18px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 6%;
     margin-right: 6%;
     line-height: 1.6;
-  }
-
-  textarea{
-    resize: none;
+    font-size: 18px;
   }
 
   #container{
     min-height: 100%;
+  }
+
+  textarea{
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
   }
 
   #main{
@@ -182,16 +176,20 @@
 
   #myTable {
     border-collapse: collapse; /* Collapse borders */
-    width: 100%; /* Full-width */
-    border: 1px solid #ddd; /* Add a grey border */
+    width: 65%; /* Full-width */
+    border: 2px solid #ddd; /* Add a grey border */
     font-size: 18px; /* Increase font-size */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
   }
     
   #myTable th, #myTable td {
     text-align: left; /* Left-align text */
     padding: 12px; /* Add padding */
-    padding-left: 25%;
+    padding-left: 2%;
+    position: relative;
   }
     
 </style>

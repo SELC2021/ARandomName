@@ -6,14 +6,14 @@
   <meta charset= "UTF-8">
 </head>
 
-<body background="C:\Users\zacha\OneDrive\Pictures\SE166\Norway.jpg">
+<body background="C:\Users\zacha\OneDrive\Pictures\SE166\Matterhorn.jpg">
   <header>
     <div class="container">
       <nav>
         <ul>
           <li><a href="TravelBlog-1.html">Home</a></li> 
-          <li><a href="TravelBlog-2.html" class="active">About</a></li>
-          <li><a href="TravelBlog-3.html">Donate</a></li> 
+          <li><a href="TravelBlog-2.html">About</a></li>
+          <li><a href="TravelBlog-3.html" class="active">Donate</a></li> 
           <li><a href="#">Blogs</a></li> 
           <li><a href="TravelBlog-4.html">Filter</a></li> 
           <li><a href="TravelBlog-5.html">Contact</a></li> 
@@ -22,7 +22,7 @@
       </nav>
     </div>
   </header>
-  <h1>About Us</h1>
+  <h1>Donate</h1>
   <h2>Travel Blog</h2>
   <footer>
     <nav>
@@ -33,20 +33,41 @@
     </nav>
   </footer>
   <div class="container">
-    <br>
-    <br>
-    <p>
-      <i>*We are students at Iowa State University in SE 186X, we have not actually travelled to all places mentioned in this blog.</i>
-    <p>
-      We would love to be travelling the world right now. This website is a learning expierience for 2 students at Iowa State University
-      in a class called SE 186X. This is a project that was pursued to learn the basics of web development. We wanted to create a website that
-      could show tons of the people the world and help them find interest in certain regions of the world. In the end we would love to hear that
-      our blog encouraged somebody to take a trip somewhere new in the world.
-    </p>
-    <br>
-    <br>
+      <br>
+      <br>
+      <p>
+          We are making this project on our own time and would love donations if you can spare any money.
+          <p>
+              <i>
+                  We do not need any money this page is purely proof of ability to provide donations
+              </i>
+      </p>
+      <br>
+      <br>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="margin-left: 47%;">
+
+          <!-- Identify your business so that you can collect the payments. -->
+          <input type="hidden" name="business"
+              value="donations@kcparkfriends.org">
+      
+          <!-- Specify a Donate button. -->
+          <input type="hidden" name="cmd" value="_donations">
+      
+          <!-- Specify details about the contribution -->
+          <input type="hidden" name="item_name" value="Friends of the Park">
+          <input type="hidden" name="item_number" value="Fall Cleanup Campaign">
+          <input type="hidden" name="currency_code" value="USD">
+      
+          <!-- Display the payment button. -->
+          <input type="image" name="submit"
+          src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+          alt="Donate">
+          <img alt="" width="1" height="1"
+          src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+      
+      </form>
   </div>
-  <!--<img src = "C:\Users\zacha\OneDrive\Pictures\SE166\Norway.jpg" style="width: fill;height: 655px;">-->
+  <!--<img src = "C:\Users\zacha\OneDrive\Pictures\SE166\Matterhorn.jpg" style="width: fill;height: 710px;">-->
   <footer>
     <nav>
       <ul>
@@ -58,7 +79,7 @@
 <style>
   body{
     margin: 0;
-    background-size: 100%;
+    background-size: cover;
     font-family: sans-serif;
     font-weight: 300;
     background-repeat: no-repeat;
