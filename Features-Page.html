@@ -1,0 +1,310 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>
+2blog
+</title>
+<link rel="stylesheet" href="style.css">
+<meta charset= "UTF-8">
+<style>
+body{
+margin: 0;
+}
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;
+  }
+  li a {
+    color: red;
+	text-decoration: none;
+	}
+h1{
+font-size: 100px;
+padding: 15px;
+text-align: center;
+color: #1EAE98;
+}
+h2{
+font-size: 45px;
+text-align: center;
+color: #1EAE98;
+}
+h3{
+font-size: 45px;
+padding-left: 100px;
+padding-right: 100px;
+/*text-align: center;*/
+}
+h4{
+font-size: 30px;
+}
+p {
+color: black;
+}
+
+nav ul { /*<!-- sizes the navigation bar and the bar under it-->*/
+margin: 0;
+padding: 20px 0 20px 0;
+list style: none;
+padding-right: 50px;
+}
+nav { /*<!--Determines the color of the nav bar and the bar under it-->*/
+background-color: #1EAE98;
+}
+
+
+li a { /*<!--Formats the links-->*/
+text-decoration: none;
+color: black;
+line-height: 50px;
+display: block;
+font-size: 25px;
+padding-right: 40px;
+}
+
+
+
+nav li { /*<!--keeps the links horizontal-->*/
+display: inline-block;
+margin-left: 0 35px;
+padding-top: 25px
+height: 50px;
+position: relative;
+}
+
+
+
+nav li ul { /*<!--Also helps format the links-->*/
+display: none;
+position: absolute;
+background-color: black;
+padding: 10px
+}
+img{
+      height: 200px;
+	  width: 250px;
+	  /*margin: 20px 0px 0px;*/
+      /*height: 200px;
+      margin: 40px 0px 0px;
+      border: 7px  solid black;
+      border radius: 20px;*/
+}
+#footer{ /*<!--Creates a footer--> */
+    background-color: #1EAE98;
+    position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+    text-align: center;
+   }
+   
+ section.blog {
+   float: left;
+   width: 959px;
+   text-decoration: none;
+   /*border-right: 1px solid black:*/
+   }
+  article {
+    clear: both;
+	overflow: auto;
+	width: 100%;
+	}
+	article li a {
+	text-decoration: none;
+	}
+  hgroup {
+    margin-top: 40px;
+	}
+  hgroup li a {
+     text-decoration: none;
+	 }
+  figure {
+    float: left;
+	width: 290px;
+	height: 220px;
+	padding: 2px;
+	margin: 0px;
+	/*border: 1px solid black;*/
+	}
+  figcaption {
+    font-size: 90%;
+	text-align: left;
+	}
+	aside section a {
+    text-decoration: none;
+	}
+  .format {
+    width: 940px;
+	margin: 20px 100px 50px 100px;
+	text-decoration: none;
+	/*border: 2px solid #000000;*/
+	backgound-color: #ffffff;
+	}
+	aside section a {
+    display: block;
+	padding: 10px;
+	
+	}
+	a {
+	  text-decoration: none;
+	  font-size: 20px;
+	  color: black;
+	  }
+ /* aside {
+   width: 130px;
+   float: left;
+   padding: 0px 0px 0px 20px;
+   margin-top: 20px;
+  }
+  aside section a {
+    display: block;
+	padding: 10px;
+	border-bottom: 1px solid black;
+	}
+  aside section a:hover {
+     color: #985d6a;
+	 background-color: #efefef;
+	 }
+	 */
+	 
+
+
+</style>
+</head>
+<body>
+
+
+<header>
+<div class="container">
+<nav>
+<ul>
+<li><a href="#">Home</a></li> 
+<li><a href="#">About</a>
+<ul>
+<li><a href="#">Donate</a></li>
+</ul>
+</li>
+<li><a href="#">Blogs</a></li> 
+<li><a href="#">Filter</a></li> 
+<li><a href="#">Contact</a></li> 
+<li><a href="#"></a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+
+<h3>FEATURED ARTICLES</h3>
+
+<div class="format">    
+	  <section class ="blog">
+	    <article>
+		  <figure>
+		    <img src="C:\Users\BI\Pictures\seoul_pic.jpg">
+			<figcaption>March 18th,2021</figcaption>
+		  </figure>
+		  <hgroup>
+		    <a href="C:\Users\BI\ARandomName\Seoul-Blog.html">Seoul</a>
+			</hgroup>
+			<p>Article about the travel experinces in South Korea jgneior</p>
+			</article>
+		</section>
+	 <section class ="blog">
+	    <article>
+		  <figure>
+		    <img src="C:\Users\BI\ARandomName\assets\paris_pic.jpg">
+			<figcaption>March 13th, 2021</figcaption>
+		  </figure>
+		  <hgroup>
+		    <a href="C:\Users\BI\ARandomName\France-Blog.html">Paris</a>
+			</hgroup>
+			<p>Come visit the wonders of France. France is full of sites and wonders worth visiting.</p>
+			</article>
+		</section>
+	<section class ="blog">
+	    <article>
+		  <figure>
+		    <img src="C:\Users\BI\ARandomName\assets\rome_pic.jpg">
+			<figcaption>April 20th, 2021</figcaption>
+		  </figure>
+		  <hgroup>
+		    <a href="C:\Users\BI\ARandomName\Rome-Blog.html">Rome</a>
+			</hgroup>
+			<p>Experience the unique architecture and sceneries that can only be found in most well known Italian city. </p>
+			</article>
+		</section>
+		<section class ="blog">
+	    <article>
+		  <figure>
+		    <img src="C:\Users\BI\ARandomName\assets\capepic2.jpg">
+			<figcaption>March 5th, 2021</figcaption>
+		  </figure>
+		  <hgroup>
+		    <a href="C:\Users\BI\ARandomName\Capetown-Blog.html">Capetown</a>
+			</hgroup>
+			<p>Capetwon is a vibrant town with much to offer.</p>
+			</article>
+		</section>
+		<section class ="blog">
+	    <article>
+		  <figure>
+		    <img src="C:\Users\BI\ARandomName\assets\peru2.jpg">
+			<figcaption>April 20th, 2021</figcaption>
+		  </figure>
+		  <hgroup>
+		    <a href="C:\Users\BI\ARandomName\Peru-Blog.html">Peru</a>
+			</hgroup>
+			<p>Experience the rich history availible through Peru's ancient architecture and relics.</p>
+			</article>
+		</section>
+		<section class ="blog">
+	    <article>
+		  <figure>
+		    <img src="C:\Users\BI\ARandomName\assets\lapic2.jpg">
+			<figcaption>April 2nd, 2021</figcaption>
+		  </figure>
+		  <hgroup>
+		    <a href="C:\Users\BI\ARandomName\LosAng-Blog.html">Los Angeles</a>
+			</hgroup>
+			<p>Come visit this iconic all American city where dreams have come true and success stories have been built. </p>
+			</article>
+		</section>
+		</div>
+	<aside>
+	  <section class="Related">
+	    <h4>Related Blogs</h4>
+		<a href="C:\Users\BI\ARandomName\Germany-Blog.html">Exploration in Germany</a>
+		<a href="C:\Users\BI\ARandomName\Brazil-Blog.html">Brazilian Buisness</a>
+		<a href="C:\Users\BI\ARandomName\Tokyo-Blog.html">Land of the Rising Sun</a>
+	  </section>
+	  <section class="continents">
+	    <h4>Continents</h4>
+		  <a href="C:\Users\BI\ARandomName\TravelBlog-Europe.html">Europe</a>
+          <a href="#">Australia</a>
+          <a href="TravelBlog-Asia.html">Asia</a>
+          <a href="TravelBlog-Africa.html">Africa</a>
+          <a href="#">South America</a>
+          <a href="#">North America</a>
+	 </section>
+	 </aside>
+	 
+	  
+	
+	  
+	 
+	
+ 
+
+
+
+
+<footer id="footer">
+<p>&copy; Copyright</p>
+  </footer>
+
+
+
+
+
+
+</body>
